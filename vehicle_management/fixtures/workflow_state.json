@@ -1,0 +1,686 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-09 15:08:36.609037",
+  "name": "Cost Control Manager",
+  "style": "",
+  "workflow_state_name": "Cost Control Manager"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-23 16:11:57.540873",
+  "name": "Pending Approval (Supervisor)",
+  "style": "",
+  "workflow_state_name": "Pending Approval (Supervisor)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-24 16:56:30.335729",
+  "name": "Purchase Request",
+  "style": "",
+  "workflow_state_name": "Purchase Request"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-27 11:06:09.612466",
+  "name": "Partially Issued",
+  "style": "",
+  "workflow_state_name": "Partially Issued"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-11-17 15:53:44.417634",
+  "name": "Review",
+  "style": "",
+  "workflow_state_name": "Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-11-17 15:55:43.302369",
+  "name": "Accepted",
+  "style": "",
+  "workflow_state_name": "Accepted"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-11-19 12:41:10.267675",
+  "name": "Approved 2",
+  "style": "",
+  "workflow_state_name": "Approved 2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-11-19 12:54:28.280378",
+  "name": "Pending Approval (PM)",
+  "style": "",
+  "workflow_state_name": "Pending Approval (PM)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-11-19 12:56:16.626122",
+  "name": "Pending Approval (HTM)",
+  "style": "",
+  "workflow_state_name": "Pending Approval (HTM)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-11-19 12:57:07.220250",
+  "name": "Pending Approval (THM)",
+  "style": "",
+  "workflow_state_name": "Pending Approval (THM)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-11-21 13:59:21.839064",
+  "name": "Pending Approval (Technical Office)",
+  "style": "",
+  "workflow_state_name": "Pending Approval (Technical Office)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-11 07:30:47.064063",
+  "name": "Approved by Supervisor",
+  "style": "",
+  "workflow_state_name": "Approved by Supervisor"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-11 07:31:42.921280",
+  "name": "Approved (Performance & Monitoring)",
+  "style": "",
+  "workflow_state_name": "Approved (Performance & Monitoring)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-11 07:32:43.312868",
+  "name": "Approved (Accounts Manager)",
+  "style": "",
+  "workflow_state_name": "Approved (Accounts Manager)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-11 07:39:09.300049",
+  "name": "Approved by Petty Cash Requester",
+  "style": "",
+  "workflow_state_name": "Approved by Petty Cash Requester"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-12 08:21:19.795653",
+  "name": "initiated",
+  "style": "",
+  "workflow_state_name": "initiated"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-12 08:22:29.224308",
+  "name": "Sent to Project manager",
+  "style": "",
+  "workflow_state_name": "Sent to Project manager"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-12 08:22:50.703799",
+  "name": "Pending Warehouse",
+  "style": "",
+  "workflow_state_name": "Pending Warehouse"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-12 08:23:21.140462",
+  "name": "Issuing Items",
+  "style": "",
+  "workflow_state_name": "Issuing Items"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-12 08:24:00.016141",
+  "name": "items issued",
+  "style": "",
+  "workflow_state_name": "items issued"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-12 08:24:53.599847",
+  "name": "Rejected By Project manager",
+  "style": "",
+  "workflow_state_name": "Rejected By Project manager"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-12 08:25:28.516927",
+  "name": "Sent to Warehouse",
+  "style": "",
+  "workflow_state_name": "Sent to Warehouse"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-12 08:25:49.149109",
+  "name": "Completed",
+  "style": "",
+  "workflow_state_name": "Completed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-12 08:26:02.898303",
+  "name": "Pending Procurement Approval",
+  "style": "",
+  "workflow_state_name": "Pending Procurement Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-12 08:28:22.408237",
+  "name": "Pending Procurement",
+  "style": "",
+  "workflow_state_name": "Pending Procurement"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-12 08:28:36.130399",
+  "name": "Pending items issuing",
+  "style": "",
+  "workflow_state_name": "Pending items issuing"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-12 08:28:46.756425",
+  "name": "At Main Warehouse",
+  "style": "",
+  "workflow_state_name": "At Main Warehouse"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-18 09:01:26.992848",
+  "name": "Pending Approval (WAH)",
+  "style": "",
+  "workflow_state_name": "Pending Approval (WAH)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-18 09:02:53.508179",
+  "name": "Pending Approval (HR)",
+  "style": "",
+  "workflow_state_name": "Pending Approval (HR)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-18 09:03:21.455027",
+  "name": "Pending Approval (Project Control Manager)",
+  "style": "",
+  "workflow_state_name": "Pending Approval (Project Control Manager)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-18 09:04:47.150700",
+  "name": "Cancel",
+  "style": "",
+  "workflow_state_name": "Cancel"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-03-04 15:02:21.303964",
+  "name": "Petty Cash Requester",
+  "style": "",
+  "workflow_state_name": "Petty Cash Requester"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-03-10 07:52:11.948915",
+  "name": "Warehouse Manager",
+  "style": "",
+  "workflow_state_name": "Warehouse Manager"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-03-10 07:54:17.712053",
+  "name": "Issue material",
+  "style": "",
+  "workflow_state_name": "Issue material"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 09:15:30.318183",
+  "name": "Assign to Technician",
+  "style": "",
+  "workflow_state_name": "Assign to Technician"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 09:16:10.772765",
+  "name": "Assigned",
+  "style": "",
+  "workflow_state_name": "Assigned"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 09:16:48.524995",
+  "name": "Submitted",
+  "style": "",
+  "workflow_state_name": "Submitted"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 09:17:32.465406",
+  "name": "Done",
+  "style": "",
+  "workflow_state_name": "Done"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 09:25:06.461729",
+  "name": "New",
+  "style": "",
+  "workflow_state_name": "New"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 09:26:11.530866",
+  "name": "Work In Progress",
+  "style": "",
+  "workflow_state_name": "Work In Progress"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 09:26:45.615125",
+  "name": "Reopened",
+  "style": "",
+  "workflow_state_name": "Reopened"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 09:27:07.806742",
+  "name": "Solution Suggested",
+  "style": "",
+  "workflow_state_name": "Solution Suggested"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 09:27:51.770977",
+  "name": "Closed",
+  "style": "",
+  "workflow_state_name": "Closed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 09:41:04.532685",
+  "name": "Cancelled",
+  "style": "",
+  "workflow_state_name": "Cancelled"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 09:41:22.955992",
+  "name": "Reserved",
+  "style": "",
+  "workflow_state_name": "Reserved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 09:49:25.519068",
+  "name": "Incoming",
+  "style": "",
+  "workflow_state_name": "Incoming"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 09:49:53.949742",
+  "name": "In Progress",
+  "style": "",
+  "workflow_state_name": "In Progress"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 09:50:11.114439",
+  "name": "Expired",
+  "style": "",
+  "workflow_state_name": "Expired"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 10:02:03.324728",
+  "name": "To Do",
+  "style": "",
+  "workflow_state_name": "To Do"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 10:02:32.412200",
+  "name": "Running",
+  "style": "",
+  "workflow_state_name": "Running"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 10:09:48.887339",
+  "name": "Registered",
+  "style": "",
+  "workflow_state_name": "Registered"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 10:10:05.431269",
+  "name": "Downgraded",
+  "style": "",
+  "workflow_state_name": "Downgraded"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 10:10:39.186148",
+  "name": "Reserve",
+  "style": "",
+  "workflow_state_name": "Reserve"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-01 10:11:00.759756",
+  "name": "Waiting List",
+  "style": "",
+  "workflow_state_name": "Waiting List"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-11-21 11:16:08.048386",
+  "name": "Pending Approval (Cost Control)",
+  "style": "",
+  "workflow_state_name": "Pending Approval (Cost Control)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-11-20 14:22:37.922169",
+  "name": "Pending Approval (Accounting)",
+  "style": "",
+  "workflow_state_name": "Pending Approval (Accounting)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-11-21 14:08:04.045056",
+  "name": "Pending Approval (Procurements Manager)",
+  "style": "",
+  "workflow_state_name": "Pending Approval (Procurements Manager)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-01-12 15:29:43.388919",
+  "name": "Pending Approval (Technical Manager)",
+  "style": "",
+  "workflow_state_name": "Pending Approval (Technical Manager)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-12-03 13:36:38.004035",
+  "name": "Transferred",
+  "style": "",
+  "workflow_state_name": "Transferred"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-03-05 13:37:41.755907",
+  "name": "Supervisor",
+  "style": "Inverse",
+  "workflow_state_name": "Supervisor"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-03-05 13:38:08.232418",
+  "name": "Performance & Monitoring",
+  "style": "Primary",
+  "workflow_state_name": "Performance & Monitoring"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "remove",
+  "modified": "2024-07-08 20:20:02.698036",
+  "name": "Rejected",
+  "style": "Danger",
+  "workflow_state_name": "Rejected"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-08-19 13:53:36.019959",
+  "name": "To Approve",
+  "style": "",
+  "workflow_state_name": "To Approve"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-08-08 09:38:38.083207",
+  "name": "Pending Approval",
+  "style": "Info",
+  "workflow_state_name": "Pending Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-11-21 14:02:36.318887",
+  "name": "Pending Approval (Warehouse Manager)",
+  "style": "",
+  "workflow_state_name": "Pending Approval (Warehouse Manager)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-01-11 20:57:23.707035",
+  "name": "Pending Approval (IT Manager)",
+  "style": "",
+  "workflow_state_name": "Pending Approval (IT Manager)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-11-19 13:03:22.374592",
+  "name": "Pending Approval (GM)",
+  "style": "",
+  "workflow_state_name": "Pending Approval (GM)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-11-27 16:07:00.477192",
+  "name": "Issued",
+  "style": "",
+  "workflow_state_name": "Issued"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-11-21 14:01:13.468413",
+  "name": "Pending Approval (Project Manager)",
+  "style": "",
+  "workflow_state_name": "Pending Approval (Project Manager)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "question-sign",
+  "modified": "2024-07-08 20:20:02.691913",
+  "name": "Pending",
+  "style": "",
+  "workflow_state_name": "Pending"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "ok-sign",
+  "modified": "2024-07-08 20:20:02.695294",
+  "name": "Approved",
+  "style": "Success",
+  "workflow_state_name": "Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-08-08 09:37:44.969301",
+  "name": "Draft",
+  "style": "Primary",
+  "workflow_state_name": "Draft"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-10 07:37:32.653461",
+  "name": "Submit",
+  "style": "",
+  "workflow_state_name": "Submit"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-16 16:19:32.932435",
+  "name": "Pending Approval (Area Manager)",
+  "style": "",
+  "workflow_state_name": "Pending Approval (Area Manager)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-16 16:18:00.781126",
+  "name": "Pending Approval (Assistant GM)",
+  "style": "",
+  "workflow_state_name": "Pending Approval (Assistant GM)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-04-29 10:15:19.925654",
+  "name": "Reroute",
+  "style": "",
+  "workflow_state_name": "Reroute"
+ }
+]

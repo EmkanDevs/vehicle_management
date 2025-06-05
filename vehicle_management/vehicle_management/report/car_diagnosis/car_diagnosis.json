@@ -1,0 +1,30 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2025-03-31 15:42:51.735417",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "CPC Letterhead",
+ "letterhead": null,
+ "modified": "2025-03-31 15:42:51.735417",
+ "modified_by": "Administrator",
+ "module": "Vehicle Management",
+ "name": "Car Diagnosis",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\n    `tabCar Diagnosis`.`subject` as `Subject:data:150`,\n    `tabCar Diagnosis`.`assigned_to` as `Assigned To:link:150`,\n    `tabCar Diagnosis`.`priority` as `Priority To:rating:150`,\n    `tabCar Diagnosis`.`date_of_receipt` as `Date of Receipt To:date:150`,\n    `tabCar Diagnosis`.`customer_name` as `Customer_name To:link:150`,\n    `tabCar Diagnosis`.`mobile` as `Mobile:data:150`,\n    `tabCar Diagnosis`.`approver` as `Approver:link:150`,\n    `tabCar Diagnosis`.`workflow_state` as `Workflow State:data:150` \n    FROM    \n        `tabCar Diagnosis`",
+ "ref_doctype": "Car Diagnosis",
+ "report_name": "Car Diagnosis",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}

@@ -1,0 +1,318 @@
+{
+ "charts": [
+  {
+   "chart_name": "Car Repair Chart",
+   "label": "Car Repair Bar Chart"
+  },
+  {
+   "chart_name": "Contract Information",
+   "label": "Contract Information"
+  }
+ ],
+ "content": "[{\"id\":\"zwSSdo2wp4\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Vehicle Management</span>\",\"col\":12}},{\"id\":\"MB82Gk7Ret\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Car Repair Bar Chart\",\"col\":12}},{\"id\":\"_AAbhAUNNO\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Contract Information\",\"col\":12}},{\"id\":\"MEFrtAf4im\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"wZr3Jf0ZoV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Vehicle Tags\",\"col\":3}},{\"id\":\"0M6jj97uEs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Car Repair\",\"col\":3}},{\"id\":\"0h8MC-N6mS\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Car Diagnosis\",\"col\":3}},{\"id\":\"zS5J18APci\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Service Manager\",\"col\":3}},{\"id\":\"9YDzqcnF6e\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Technician\",\"col\":3}},{\"id\":\"FfTq5lbS-O\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Vehicles\",\"col\":3}},{\"id\":\"zo3LrEwNiF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Car Reservations\",\"col\":3}},{\"id\":\"XHXp3lqDGr\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Driver History\",\"col\":3}},{\"id\":\"UDrrZG8gAP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Odometers\",\"col\":3}},{\"id\":\"pEiAi9pyN_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Services\",\"col\":3}},{\"id\":\"NtEqbl2Ogb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Contract Information\",\"col\":3}},{\"id\":\"09_EYvAeiN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\" Vehicle Abuse of Usage\",\"col\":3}},{\"id\":\"6AfD-4PnVI\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"9byKRhjWg-\",\"type\":\"card\",\"data\":{\"card_name\":\"Master Configurations\",\"col\":4}},{\"id\":\"yAM-Z7dePK\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
+ "creation": "2025-04-01 12:42:31.742700",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "call",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Vehicle Management",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 7,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Car Diagnosis Details",
+   "link_count": 0,
+   "link_to": "Car Diagnosis",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Car Repair Details",
+   "link_count": 0,
+   "link_to": "Car Repair details",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Car Reservation Details",
+   "link_count": 0,
+   "link_to": "Car Reservation Details",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Contract Details",
+   "link_count": 0,
+   "link_to": "Contract Detail",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Vehicle Information",
+   "link_count": 0,
+   "link_to": "Vehicle Information",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Driver Details",
+   "link_count": 0,
+   "link_to": "Driver Details",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Car Service Details",
+   "link_count": 0,
+   "link_to": "Car Service Details",
+   "link_type": "Report",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Master Configurations",
+   "link_count": 9,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Brand",
+   "link_count": 0,
+   "link_to": "Brand",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Service Type",
+   "link_count": 0,
+   "link_to": "Service Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Car Parts",
+   "link_count": 0,
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Manufacturer",
+   "link_count": 0,
+   "link_to": "Manufacturer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicles Model",
+   "link_count": 0,
+   "link_to": "Vehicles Model",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reservation Locations",
+   "link_count": 0,
+   "link_to": "Reservation Locations",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle Tags",
+   "link_count": 0,
+   "link_to": "Vehicle Tags",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Accident Type",
+   "link_count": 0,
+   "link_to": "Accident Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle Abuse Type",
+   "link_count": 0,
+   "link_to": "Vehicle Abuse Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-05-19 14:58:41.088963",
+ "modified_by": "Administrator",
+ "module": "Vehicle Management",
+ "name": "Vehicle Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Facility",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "sequence_id": 23.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Service Manager",
+   "link_to": "Employee",
+   "stats_filter": "[[\"Employee\",\"is_service_manager\",\"=\",1,false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": " Vehicle Abuse of Usage",
+   "link_to": "Vehicle Abuse of Usage",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Vehicle Tags",
+   "link_to": "Vehicle Tags",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Car Reservations",
+   "link_to": "Car Reservations",
+   "stats_filter": "[[\"Car Reservations\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Technician",
+   "link_to": "Employee",
+   "stats_filter": "[[\"Employee\",\"is_technician\",\"=\",1,false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Car Repair",
+   "link_to": "Car Repair",
+   "stats_filter": "[[\"Car Repair\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Driver History",
+   "link_to": "Driver History",
+   "stats_filter": "[[\"Driver History\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Car Diagnosis",
+   "link_to": "Car Diagnosis",
+   "stats_filter": "[[\"Car Diagnosis\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Odometers",
+   "link_to": "Odometers",
+   "stats_filter": "[[\"Odometers\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Services",
+   "link_to": "Services",
+   "stats_filter": "[[\"Services\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "Contract Information",
+   "link_to": "Contract Information",
+   "stats_filter": "[[\"Contract Information\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Vehicles",
+   "link_to": "Vehicles",
+   "stats_filter": "[[\"Vehicles\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Vehicle Management"
+}

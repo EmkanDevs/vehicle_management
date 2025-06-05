@@ -1,0 +1,172 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CD.#####",
+ "creation": "2025-03-31 13:14:51.311340",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "subject",
+  "assigned_to",
+  "approver",
+  "priority",
+  "date_of_receipt",
+  "customer_info",
+  "customer_name",
+  "contact_name",
+  "column_break_8",
+  "phone",
+  "mobile",
+  "email",
+  "contact_number",
+  "section_break_13",
+  "car_details",
+  "table_15",
+  "section_break_16",
+  "time_sheet_info",
+  "section_break_18",
+  "service_checklist",
+  "workflow_state"
+ ],
+ "fields": [
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subject"
+  },
+  {
+   "depends_on": "eval: doc.workflow_state == \"Assigned\" || doc.workflow_state == \"Done\"",
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Assigned to",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "eval: doc.workflow_state == \"Submitted\" || doc.workflow_state == \"Approved\"",
+   "fieldname": "approver",
+   "fieldtype": "Link",
+   "label": "Approver",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Rating",
+   "label": "Priority"
+  },
+  {
+   "fieldname": "date_of_receipt",
+   "fieldtype": "Date",
+   "label": "Date of Receipt"
+  },
+  {
+   "fieldname": "customer_info",
+   "fieldtype": "Heading",
+   "label": "Customer Info"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "contact_name",
+   "fieldtype": "Data",
+   "label": "Contact Name"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone "
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "car_details",
+   "fieldtype": "Heading",
+   "label": "Car Details"
+  },
+  {
+   "fieldname": "table_15",
+   "fieldtype": "Table",
+   "options": "Car Info"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "time_sheet_info",
+   "fieldtype": "Table",
+   "label": "Timesheet Info",
+   "options": "Timesheet Detail"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "service_checklist",
+   "fieldtype": "Table",
+   "label": "Service Checklist Info",
+   "options": "Service Item Checklist"
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Data",
+   "label": "Workflow State"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-31 13:35:53.155456",
+ "modified_by": "Administrator",
+ "module": "Vehicle Management",
+ "name": "Car Diagnosis",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

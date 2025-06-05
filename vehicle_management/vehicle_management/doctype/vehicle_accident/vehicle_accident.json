@@ -1,0 +1,252 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "ACCIDENT-.YYYY.-.####",
+ "creation": "2025-05-18 11:22:20.877884",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "vehicle_id",
+  "tags",
+  "license_plate",
+  "door_number",
+  "insurance_claim_filed",
+  "police_report_filed",
+  "injuries",
+  "column_break_w72l",
+  "accident_date_and_time",
+  "accident_type",
+  "severity_level",
+  "location",
+  "location_textgps",
+  "column_break_z3im",
+  "weather_condition",
+  "driver",
+  "driver_name",
+  "odometer_reading",
+  "vehicle_condition",
+  "at_project_site",
+  "project",
+  "section_break_fycc",
+  "accident_members",
+  "section_break_hmsp",
+  "police_report_number",
+  "investigation_findings",
+  "status",
+  "column_break_no4v",
+  "police_station",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_fycc",
+   "fieldtype": "Section Break",
+   "label": "Incident Details"
+  },
+  {
+   "fieldname": "vehicle_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle ID",
+   "options": "Vehicles",
+   "reqd": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "accident_date_and_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Accident Date and Time"
+  },
+  {
+   "fieldname": "accident_type",
+   "fieldtype": "Link",
+   "label": "Accident Type",
+   "options": "Accident Type"
+  },
+  {
+   "fieldname": "severity_level",
+   "fieldtype": "Select",
+   "label": "Severity Level",
+   "options": "\nMinor (No Injuries)\nModerate (Minor Injuries)\nSerious (Major Injuries)\nFatal"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "location_textgps",
+   "fieldtype": "Data",
+   "label": "Location Text/GPS"
+  },
+  {
+   "fieldname": "weather_condition",
+   "fieldtype": "Link",
+   "label": "Weather Condition",
+   "options": "Weather Conditions"
+  },
+  {
+   "fetch_from": "vehicle_id.driver",
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Driver",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "odometer_reading",
+   "fieldtype": "Data",
+   "label": "Odometer Reading"
+  },
+  {
+   "fieldname": "vehicle_condition",
+   "fieldtype": "Select",
+   "label": "Vehicle Condition",
+   "options": "\nDrivable\nNeeds Towing\nTotal loss"
+  },
+  {
+   "fieldname": "police_report_number",
+   "fieldtype": "Data",
+   "label": "Police Report Number"
+  },
+  {
+   "fieldname": "police_station",
+   "fieldtype": "Data",
+   "label": "Police Station"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fetch_from": "vehicle_id.tags",
+   "fieldname": "tags",
+   "fieldtype": "Data",
+   "label": "Tags",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_id.license_plate",
+   "fieldname": "license_plate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "License Plate",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_id.door_number",
+   "fieldname": "door_number",
+   "fieldtype": "Data",
+   "label": "Door Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_w72l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_z3im",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_hmsp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Reported",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Reported\nUnder Investigation\nResolved\nClaim Settled\nClosed"
+  },
+  {
+   "default": "0",
+   "fieldname": "insurance_claim_filed",
+   "fieldtype": "Check",
+   "label": "Insurance Claim Filed"
+  },
+  {
+   "default": "0",
+   "fieldname": "police_report_filed",
+   "fieldtype": "Check",
+   "label": "Police Report Filed"
+  },
+  {
+   "default": "0",
+   "fieldname": "injuries",
+   "fieldtype": "Check",
+   "label": "Injuries"
+  },
+  {
+   "fieldname": "column_break_no4v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "at_project_site",
+   "fieldtype": "Check",
+   "label": "At Project Site"
+  },
+  {
+   "depends_on": "eval:doc.at_project_site==1",
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fetch_from": "vehicle_id.driver_name",
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "label": "Driver Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "investigation_findings",
+   "fieldtype": "Small Text",
+   "label": "Investigation Findings"
+  },
+  {
+   "fieldname": "accident_members",
+   "fieldtype": "Table",
+   "label": "Accident Members",
+   "options": "Accident Members"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-18 16:24:47.862932",
+ "modified_by": "Administrator",
+ "module": "Vehicle Management",
+ "name": "Vehicle Accident",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

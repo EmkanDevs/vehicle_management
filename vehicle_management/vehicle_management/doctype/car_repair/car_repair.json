@@ -1,0 +1,266 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CR.####",
+ "creation": "2025-03-31 12:29:40.339310",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "request_details_tab",
+  "personal_details",
+  "customer_name",
+  "email",
+  "phone",
+  "car_repair_details",
+  "reason_for_repair",
+  "service_type",
+  "car",
+  "car_brand",
+  "car_model",
+  "car_manufacturing_year",
+  "chassis_no",
+  "priority",
+  "reason_for_repair_in_details",
+  "list_of_damage",
+  "attachment_files",
+  "repair_request_date",
+  "section_break_17",
+  "tab_break_18",
+  "car_repair_team",
+  "technician",
+  "repair_tab",
+  "problem",
+  "car_item_list",
+  "car_images",
+  "status",
+  "close_date",
+  "solution_suggested_tab",
+  "solution_details",
+  "customer_feedback_tab",
+  "feedback",
+  "customer_rating",
+  "workflow_state"
+ ],
+ "fields": [
+  {
+   "fieldname": "request_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Request Details"
+  },
+  {
+   "fieldname": "personal_details",
+   "fieldtype": "Heading",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Phone"
+  },
+  {
+   "fieldname": "car_repair_details",
+   "fieldtype": "Heading",
+   "label": "Car Repair Details"
+  },
+  {
+   "fieldname": "reason_for_repair",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reason for Repair"
+  },
+  {
+   "fieldname": "service_type",
+   "fieldtype": "Link",
+   "label": " Service Type",
+   "options": "Service Type"
+  },
+  {
+   "fieldname": "car",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Car",
+   "options": "Vehicle"
+  },
+  {
+   "fieldname": "car_brand",
+   "fieldtype": "Link",
+   "label": "Car Brand",
+   "options": "Brand"
+  },
+  {
+   "fetch_from": "car.model",
+   "fieldname": "car_model",
+   "fieldtype": "Data",
+   "label": "Car Model"
+  },
+  {
+   "fetch_from": "car.make",
+   "fieldname": "car_manufacturing_year",
+   "fieldtype": "Data",
+   "label": "Car Manufacturing Year"
+  },
+  {
+   "fetch_from": "car.chassis_no",
+   "fieldname": "chassis_no",
+   "fieldtype": "Data",
+   "label": "Chassis No"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "High\nMedium\nLow"
+  },
+  {
+   "fieldname": "reason_for_repair_in_details",
+   "fieldtype": "Long Text",
+   "label": "Reason for Repair in Details"
+  },
+  {
+   "fieldname": "list_of_damage",
+   "fieldtype": "Long Text",
+   "label": "List of Damage"
+  },
+  {
+   "fieldname": "attachment_files",
+   "fieldtype": "Attach Image",
+   "label": "Attachment Files"
+  },
+  {
+   "fieldname": "repair_request_date",
+   "fieldtype": "Date",
+   "label": "Repair Request Date "
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval: doc.workflow_state == \"Assigned\" || doc.workflow_state == \"Done\"",
+   "fieldname": "tab_break_18",
+   "fieldtype": "Tab Break",
+   "label": "Team Details"
+  },
+  {
+   "fieldname": "car_repair_team",
+   "fieldtype": "Link",
+   "label": "Car Repair Team",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "technician",
+   "fieldtype": "Link",
+   "label": "Technician",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "eval: doc.workflow_state == \"Work In Progress\" || doc.workflow_state == \"Done\"",
+   "fieldname": "repair_tab",
+   "fieldtype": "Tab Break",
+   "label": "Repair "
+  },
+  {
+   "fieldname": "problem",
+   "fieldtype": "Long Text",
+   "label": "Problem"
+  },
+  {
+   "fieldname": "car_item_list",
+   "fieldtype": "Table",
+   "label": "Car Item List",
+   "options": "Car List Item"
+  },
+  {
+   "fieldname": "car_images",
+   "fieldtype": "Table",
+   "label": "Car Images",
+   "options": "Car Photos"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Done\nPending\nNot Solved"
+  },
+  {
+   "fieldname": "close_date",
+   "fieldtype": "Date",
+   "label": "Close Date"
+  },
+  {
+   "depends_on": "eval: doc.workflow_state == \"Solution Suggested\"  || doc.workflow_state == \"Done\"",
+   "fieldname": "solution_suggested_tab",
+   "fieldtype": "Tab Break",
+   "label": "Solution Suggested"
+  },
+  {
+   "fieldname": "solution_details",
+   "fieldtype": "Long Text",
+   "label": "Solution Details"
+  },
+  {
+   "depends_on": "eval: doc.workflow_state == \"Done\"",
+   "fieldname": "customer_feedback_tab",
+   "fieldtype": "Tab Break",
+   "label": "Customer Feedback"
+  },
+  {
+   "fieldname": "feedback",
+   "fieldtype": "Long Text",
+   "label": "Feedback"
+  },
+  {
+   "fieldname": "customer_rating",
+   "fieldtype": "Rating",
+   "label": "Customer Rating"
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Link",
+   "label": "Workflow State",
+   "options": "Workflow State"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-31 13:56:00.661526",
+ "modified_by": "Administrator",
+ "module": "Vehicle Management",
+ "name": "Car Repair",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

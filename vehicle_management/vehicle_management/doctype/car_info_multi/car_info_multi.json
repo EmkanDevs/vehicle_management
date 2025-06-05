@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CIM.#####",
+ "creation": "2025-03-31 13:02:26.992708",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "car",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "car",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Car",
+   "options": "Car Repair"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-31 13:04:18.568886",
+ "modified_by": "Administrator",
+ "module": "Vehicle Management",
+ "name": "Car Info Multi",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

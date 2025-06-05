@@ -1,0 +1,45 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2025-03-31 15:51:21.282115",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Datetime",
+   "label": "Start Date",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "label": "End Date",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "CPC Letterhead",
+ "letterhead": null,
+ "modified": "2025-03-31 15:51:21.282115",
+ "modified_by": "Administrator",
+ "module": "Vehicle Management",
+ "name": "Car Reservation Details",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "select vehicle,driver,approver,start_time,end_time,workflow_state from `tabCar Reservations` where start_time >= %(start_time)s and end_time <= %(end_time)s and workflow_state = 'Reserved'",
+ "ref_doctype": "Car Reservations",
+ "report_name": "Car Reservation Details",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}

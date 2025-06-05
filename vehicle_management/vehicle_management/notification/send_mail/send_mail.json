@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state==\"Done\"",
+ "creation": "2025-04-01 12:34:37.754577",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Car Repair",
+ "enabled": 0,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Message Example</p>\n\n<h3>Car Repair service request is successfully Done ! </h3>\n",
+ "message_type": "Markdown",
+ "modified": "2025-04-09 10:40:18.574015",
+ "modified_by": "Administrator",
+ "module": "Vehicle Management",
+ "name": "Send Mail",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "email"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "subject": "{{ doc.name }} Car Repair",
+ "value_changed": "workflow_state"
+}

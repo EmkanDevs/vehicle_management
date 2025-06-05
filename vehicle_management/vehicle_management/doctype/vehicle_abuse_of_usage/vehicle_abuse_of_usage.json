@@ -1,0 +1,287 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "ABUS-USG-.YYYY.-.####",
+ "creation": "2025-05-19 10:50:46.050385",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "vehicle_id",
+  "tags",
+  "license_plate",
+  "door_number",
+  "project",
+  "column_break_1wdi",
+  "report_date",
+  "incident_datetime",
+  "abuse_type",
+  "severity_level",
+  "project_name",
+  "column_break_gltb",
+  "driver",
+  "driver_namer",
+  "actual_driver",
+  "actual_driver_name",
+  "policy_violated",
+  "supporting_evidence",
+  "investigation_details_section",
+  "reported_by",
+  "investigator",
+  "findings",
+  "column_break_yupz",
+  "reported_by_name",
+  "investigator_name",
+  "driver_statement",
+  "consequences_and_actions_section",
+  "status",
+  "action_details",
+  "column_break_t4qv",
+  "financial_impact",
+  "requires_follow_up",
+  "disciplinary_action",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Vehicle Abuse of Usage",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "vehicle_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle ID",
+   "options": "Vehicles",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "incident_datetime",
+   "fieldtype": "Datetime",
+   "label": "Incident Date/Time"
+  },
+  {
+   "fieldname": "abuse_type",
+   "fieldtype": "Link",
+   "label": "Abuse Type",
+   "options": "Vehicle Abuse Type"
+  },
+  {
+   "fieldname": "severity_level",
+   "fieldtype": "Select",
+   "label": "Severity Level",
+   "options": "\nMinor\nModerate\nSerious\nCritical"
+  },
+  {
+   "fetch_from": "vehicle_id.driver",
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "actual_driver",
+   "fieldtype": "Link",
+   "label": "Actual Driver",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "reported_by",
+   "fieldtype": "Link",
+   "label": "Reported By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "policy_violated",
+   "fieldtype": "Attach",
+   "label": "Policy Violated"
+  },
+  {
+   "fieldname": "supporting_evidence",
+   "fieldtype": "Attach",
+   "label": "Supporting Evidence"
+  },
+  {
+   "fieldname": "investigation_details_section",
+   "fieldtype": "Section Break",
+   "label": "Investigation Details"
+  },
+  {
+   "fieldname": "investigator",
+   "fieldtype": "Link",
+   "label": "Investigator",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "driver_statement",
+   "fieldtype": "Small Text",
+   "label": "Driver Statement"
+  },
+  {
+   "fieldname": "findings",
+   "fieldtype": "Small Text",
+   "label": "Findings"
+  },
+  {
+   "default": "Reported",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nReported\nUnder Review\nAcknowledged\nDisputed\nConfirmed\nResolved"
+  },
+  {
+   "fieldname": "column_break_yupz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "consequences_and_actions_section",
+   "fieldtype": "Section Break",
+   "label": "Consequences and Actions"
+  },
+  {
+   "fieldname": "action_details",
+   "fieldtype": "Small Text",
+   "label": "Action Details"
+  },
+  {
+   "fieldname": "disciplinary_action",
+   "fieldtype": "Small Text",
+   "label": "Disciplinary Action",
+   "options": "\nWarning Issued\nTraining Required\nSuspension\nTermination\nLegal action\nOther"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_id.tags",
+   "fieldname": "tags",
+   "fieldtype": "Data",
+   "label": "Tags",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_id.license_plate",
+   "fieldname": "license_plate",
+   "fieldtype": "Data",
+   "label": "License Plate",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_id.door_number",
+   "fieldname": "door_number",
+   "fieldtype": "Data",
+   "label": "Door Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_1wdi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_gltb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "driver.employee_name",
+   "fieldname": "driver_namer",
+   "fieldtype": "Data",
+   "label": "Driver Namer",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "actual_driver.employee_name",
+   "fieldname": "actual_driver_name",
+   "fieldtype": "Data",
+   "label": "Actual Driver Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "reported_by.employee_name",
+   "fieldname": "reported_by_name",
+   "fieldtype": "Data",
+   "label": "Reported By Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "investigator.employee_name",
+   "fieldname": "investigator_name",
+   "fieldtype": "Data",
+   "label": "Investigator Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_t4qv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "financial_impact",
+   "fieldtype": "Check",
+   "label": "Financial Impact"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_follow_up",
+   "fieldtype": "Check",
+   "label": "Requires Follow up"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "naming_series"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-05-19 14:56:31.648801",
+ "modified_by": "Administrator",
+ "module": "Vehicle Management",
+ "name": "Vehicle Abuse of Usage",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,30 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2025-03-31 15:47:13.506790",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "CPC Letterhead",
+ "letterhead": null,
+ "modified": "2025-03-31 15:47:13.506790",
+ "modified_by": "Administrator",
+ "module": "Vehicle Management",
+ "name": "Driver Details",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\n    `tabDriver History`.`driver` as `Driver:date:180`,\n    `tabDriver History`.`vehicle` as `Vehicle:link:120`,\n    `tabDriver History`.`approver` as `Approver:data:120`,\n    `tabDriver History`.`start_date` as `Start Date:date:120`,\n    `tabDriver History`.`end_date` as `End Date:date:120`,\n    `tabDriver History`.`pickup_location` as `Pickup Location:data:120`,\n    `tabDriver History`.`drop_location` as `Drop Location:data:120`,\n    `tabDriver History`.`kilometer_distance` as `Kilometer Distance:data:120`\n     \n    \n    \n    FROM    \n        `tabDriver History`",
+ "ref_doctype": "Driver History",
+ "report_name": "Driver Details",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}

@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-18 15:11:16.308018",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "type",
+  "hospitalized",
+  "column_break_h6rm",
+  "contact_info",
+  "statement"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Witness\nPassenger\nPedestrian\nOther"
+  },
+  {
+   "default": "0",
+   "fieldname": "hospitalized",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Hospitalized"
+  },
+  {
+   "fieldname": "column_break_h6rm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_info",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contact Info"
+  },
+  {
+   "fieldname": "statement",
+   "fieldtype": "Data",
+   "label": "Statement"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-05-18 15:18:31.604143",
+ "modified_by": "Administrator",
+ "module": "Vehicle Management",
+ "name": "Accident Members",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "autoname": "CI.#####",
+ "creation": "2025-03-31 12:09:26.446470",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "car",
+  "licence_plate",
+  "model",
+  "chassis_no",
+  "fuel_type",
+  "under_gurantee",
+  "nature_of_service"
+ ],
+ "fields": [
+  {
+   "fieldname": "car",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Car",
+   "options": "Car Repair"
+  },
+  {
+   "fetch_from": "car.car",
+   "fieldname": "licence_plate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Licence Plate"
+  },
+  {
+   "fetch_from": "car.car_model",
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Model"
+  },
+  {
+   "fetch_from": "car.chassis_no",
+   "fieldname": "chassis_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Chassis No"
+  },
+  {
+   "fieldname": "fuel_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Fuel Type",
+   "options": "Petrol\nDiesel\nNatural Gas\nElectric"
+  },
+  {
+   "fieldname": "under_gurantee",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Under Gurantee?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "nature_of_service",
+   "fieldtype": "Data",
+   "label": "Nature of Service"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-31 13:41:22.027453",
+ "modified_by": "Administrator",
+ "module": "Vehicle Management",
+ "name": "Car Info",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

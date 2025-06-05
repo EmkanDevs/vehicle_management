@@ -1,3 +1,5 @@
+from . import __version__ as app_version
+
 app_name = "vehicle_management"
 app_title = "Vehicle Management"
 app_publisher = "Finbyz"
@@ -52,6 +54,15 @@ app_license = "mit"
 # ------------------
 # include app icons in desk
 # app_include_icons = "vehicle_management/public/icons.svg"
+
+
+doctype_js = {
+    "Sales Invoice" : "public/js/sales_invoice.js",
+    "Quotation" : "public/js/quotation.js",
+    "Car Repair" : "public/js/car_item_list.js",
+    "Car Diagnosis" : "public/js/service_checklist.js"
+}
+
 
 # Home Pages
 # ----------
@@ -145,6 +156,26 @@ app_license = "mit"
 # 	}
 # }
 
+
+doc_events = {
+	'Car Reservations': {
+        'validate': [
+            'vehicle_management.vehicle_management.doctype.car_reservations.car_reservations.validate'   
+            ],
+	},
+    'Services': {
+        'validate': [
+            'vehicle_management.vehicle_management.doctype.services.services.validate'   
+            ],
+    },
+    'Vehicles': {
+        'update_odometer': [
+            'vehicle_management.vehicle_management.doctype.vehicles.vehicles.update_odometer'   
+            ],
+    },
+}
+
+
 # Scheduled Tasks
 # ---------------
 
@@ -166,6 +197,22 @@ app_license = "mit"
 # 	],
 # }
 
+scheduler_events = {
+    "daily": [
+      "vehicle_management.vehicle_management.doctype.contract_information.contract_information.asd"
+    ],
+}
+
+fixtures = [{
+    "doctype": "Workflow",
+        "filters": {
+            "name": [ "in", ["Car Diagnosis Workflow", "Car Repair Workflow","Vehicles Workflow","Car Reservation Workflow","Service Workflow","Contract Information"] ]
+            }
+        },
+        {
+    "doctype": "Workflow State"
+    }
+]
 # Testing
 # -------
 

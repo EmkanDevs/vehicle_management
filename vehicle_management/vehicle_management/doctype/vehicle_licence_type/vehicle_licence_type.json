@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:licence_type",
+ "creation": "2025-04-16 15:30:06.648270",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "licence_type",
+  "column_break_krek",
+  "licence_type_arabic",
+  "section_break_dxgb",
+  "licence_type_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_dxgb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "licence_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Licence Type",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "licence_type_arabic",
+   "fieldtype": "Data",
+   "label": "Licence Type Arabic"
+  },
+  {
+   "fieldname": "licence_type_description",
+   "fieldtype": "Small Text",
+   "label": "Licence Type Description"
+  },
+  {
+   "fieldname": "column_break_krek",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-16 15:32:33.764931",
+ "modified_by": "Administrator",
+ "module": "Vehicle Management",
+ "name": "Vehicle Licence Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
