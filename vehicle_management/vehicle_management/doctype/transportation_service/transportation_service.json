@@ -1,0 +1,357 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-06-06 09:34:23.867748",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "sponser_name",
+  "sponser_contact",
+  "column_break_dkxb",
+  "service_type",
+  "requested_by",
+  "requested_by_name",
+  "requested_by_designation",
+  "column_break_1yxl",
+  "purpose",
+  "trip_description",
+  "section_break_vhwt",
+  "pickup_location",
+  "drop_location",
+  "column_break_kk0f",
+  "estimated_distance_km",
+  "date_of_pickup",
+  "column_break_urrj",
+  "start_time",
+  "end_time",
+  "section_break_fhjk",
+  "internal_passengers",
+  "external_passengers",
+  "amended_from",
+  "tab_break_jnn5",
+  "vehicle_details",
+  "column_break_jawv",
+  "manual_vehicle_details",
+  "vehicle_and_driver_details_section",
+  "vehicle",
+  "tags",
+  "column_break_hyy4",
+  "license_plate",
+  "door_number",
+  "column_break_drps",
+  "driver_name",
+  "driver_contact",
+  "section_break_sbck",
+  "manual_vehicle",
+  "manual_license_plate",
+  "column_break_opzp",
+  "column_break_wner",
+  "manual_driver_name",
+  "manual_driver_contact",
+  "tab_3_tab",
+  "payment_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "naming_series"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "sponser_name",
+   "fieldtype": "Data",
+   "label": "Sponser Name"
+  },
+  {
+   "fieldname": "sponser_contact",
+   "fieldtype": "Data",
+   "label": "Sponser Contact"
+  },
+  {
+   "fieldname": "column_break_dkxb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "service_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Service Type",
+   "options": "\nDaily Shuttle\nOne-Time Pickup\nDrop-Off\nEmergency"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Requested By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "requested_by.employee_name",
+   "fieldname": "requested_by_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Requested By Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "requested_by.designation",
+   "fieldname": "requested_by_designation",
+   "fieldtype": "Data",
+   "label": "Requested By Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_1yxl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Purpose",
+   "options": "\nSite Visit\nAirport Drop"
+  },
+  {
+   "fieldname": "trip_description",
+   "fieldtype": "Small Text",
+   "label": "Trip Description"
+  },
+  {
+   "fieldname": "section_break_vhwt",
+   "fieldtype": "Section Break",
+   "label": "Route Details"
+  },
+  {
+   "fieldname": "pickup_location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Pickup Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "drop_location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Drop Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "column_break_kk0f",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimated_distance_km",
+   "fieldtype": "Data",
+   "label": "Estimated Distance (km)"
+  },
+  {
+   "fieldname": "date_of_pickup",
+   "fieldtype": "Date",
+   "label": "Date of Pickup"
+  },
+  {
+   "fieldname": "column_break_urrj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  },
+  {
+   "depends_on": "vehicle_details",
+   "fieldname": "vehicle_and_driver_details_section",
+   "fieldtype": "Section Break",
+   "label": "Internal Details"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Vehicles"
+  },
+  {
+   "fetch_from": "vehicle.tags",
+   "fieldname": "tags",
+   "fieldtype": "Data",
+   "label": "Tags",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hyy4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "vehicle.license_plate",
+   "fieldname": "license_plate",
+   "fieldtype": "Data",
+   "label": "License Plate",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle.door_number",
+   "fieldname": "door_number",
+   "fieldtype": "Data",
+   "label": "Door Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_drps",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "vehicle.driver_name",
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "label": "Driver Name"
+  },
+  {
+   "fieldname": "driver_contact",
+   "fieldtype": "Data",
+   "label": "Driver Contact"
+  },
+  {
+   "fieldname": "section_break_fhjk",
+   "fieldtype": "Section Break",
+   "label": "Passengers List"
+  },
+  {
+   "fieldname": "internal_passengers",
+   "fieldtype": "Table",
+   "label": "Internal Passengers",
+   "options": "Transportation Service Emp Passengers"
+  },
+  {
+   "fieldname": "external_passengers",
+   "fieldtype": "Table",
+   "label": "External Passengers",
+   "options": "Transportation Service Ext Passengers"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Transportation Service",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "tab_break_jnn5",
+   "fieldtype": "Tab Break",
+   "label": "Vehicle Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "vehicle_details",
+   "fieldtype": "Check",
+   "label": "Internal Transportation"
+  },
+  {
+   "fieldname": "column_break_jawv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "manual_vehicle_details",
+   "fieldtype": "Check",
+   "label": "External Transpotation"
+  },
+  {
+   "depends_on": "manual_vehicle_details",
+   "fieldname": "section_break_sbck",
+   "fieldtype": "Section Break",
+   "label": "External Details"
+  },
+  {
+   "fieldname": "manual_vehicle",
+   "fieldtype": "Data",
+   "label": "Vehicle"
+  },
+  {
+   "fieldname": "column_break_opzp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "manual_license_plate",
+   "fieldtype": "Data",
+   "label": "License Plate"
+  },
+  {
+   "fieldname": "column_break_wner",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "manual_driver_name",
+   "fieldtype": "Data",
+   "label": "Driver Name"
+  },
+  {
+   "fieldname": "manual_driver_contact",
+   "fieldtype": "Data",
+   "label": "Driver Contact"
+  },
+  {
+   "fieldname": "tab_3_tab",
+   "fieldtype": "Tab Break",
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "payment_details",
+   "fieldtype": "Table",
+   "label": "Payment Details",
+   "options": "Payment Detail"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-06-12 08:53:04.590791",
+ "modified_by": "Administrator",
+ "module": "Vehicle Management",
+ "name": "Transportation Service",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
